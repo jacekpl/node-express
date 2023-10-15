@@ -1,16 +1,28 @@
 GET http://localhost:3000/api/persons
 
 ###
-GET http://localhost:3000/api/persons/652ba0b4efe095c8b9bc5c3b
+GET http://localhost:3000/api/persons/652ba1b1af28d9b563a688e1
 
 ###
-DELETE http://localhost:3000/api/persons/1
+GET http://localhost:3000/api/persons/invalid
+
+###
+DELETE http://localhost:3000/api/persons/652ba49f1f623a3aa6e2b2ab
+
+###
+PUT http://localhost:3000/api/persons/652ba4b21f623a3aa6e2b2b1
+content-type: application/json
+
+{
+  "name": "janek",
+  "number": "222"
+}
 
 ###
 POST http://localhost:3000/api/persons
 content-type: application/json
 
 {
-  "name": "jacek4",
+  "name": "janek",
   "number": "444555666"
 }
